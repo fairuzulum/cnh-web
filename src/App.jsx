@@ -34,6 +34,7 @@ import lp3 from "./assets/lp3.jpeg";
 import lp4 from "./assets/lp4.jpeg";
 import logo from "./assets/logo_cnh.png";
 import sertifBsn from "./assets/sertif-bsn.jpg";
+import sertifBsn01 from "./assets/sertif-bsn01.jpg";
 import sertifNib01 from "./assets/sertif-nib01.jpg";
 import sertifNib02 from "./assets/sertif-nib02.jpg";
 import sertifNib03 from "./assets/sertif-nib03.jpg";
@@ -90,7 +91,7 @@ function App() {
   const certifications = [
     {
       title: "Sertifikat BSN",
-      images: [sertifBsn],
+      images: [sertifBsn, sertifBsn01],
       thumbnail: sertifBsn,
     },
     {
