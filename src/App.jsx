@@ -15,6 +15,7 @@ import sertif1 from './assets/sertif1.jpeg'
 import sertif2 from './assets/sertif2.jpeg'
 import sertif3 from './assets/sertif3.jpeg'
 import sertif4 from './assets/sertif4.jpeg'
+import logo from './assets/logo_cnh.png'
 
 function App() {
   // Function to handle smooth scrolling
@@ -41,10 +42,12 @@ function App() {
               className="flex items-center space-x-3"
               whileHover={{ scale: 1.05 }}
             >
-              <Droplets className="h-8 w-8 text-blue-600" />
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-                CNH
-              </h1>
+             
+              <img 
+                src={logo} 
+                alt="CNH Logo" 
+                className="h-10 w-15"
+              />
             </motion.div>
             <nav className="hidden md:flex space-x-8">
               <a 
@@ -483,7 +486,7 @@ function App() {
       {/* Test and Research Results Section */}
       <section id="test-results" className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <motion.div 
               className="relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300"
               initial={{ y: 50, opacity: 0 }}
@@ -592,8 +595,7 @@ function App() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-gray-800 mb-2">Telepon</h4>
-                    <p className="text-gray-600">+62 21 1234 5678</p>
-                    <p className="text-gray-600">+62 812 3456 7890</p>
+                    <p className="text-gray-600">+62 813 1838 1219</p>
                   </div>
                 </div>
                 
@@ -604,7 +606,6 @@ function App() {
                   <div>
                     <h4 className="text-xl font-bold text-gray-800 mb-2">Email</h4>
                     <p className="text-gray-600">info@cnh-water.com</p>
-                    <p className="text-gray-600">sales@cnh-water.com</p>
                   </div>
                 </div>
                 
