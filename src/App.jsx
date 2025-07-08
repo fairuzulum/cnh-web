@@ -837,11 +837,11 @@ function App() {
                       Alamat
                     </h4>
                     <p className="text-gray-400 text-sm sm:text-base">
-                      Jl. Industri Raya No. 123
+                      Dusun Malabar, 
                       <br />
-                      Kawasan Industri Modern
+                      Desa/Kelurahan Sidamulih, Kec. Pamarican
                       <br />
-                      Jakarta Timur 13920, Indonesia
+                      Kab. Ciamis Prov. Jawa Barat
                     </p>
                   </div>
                 </div>
