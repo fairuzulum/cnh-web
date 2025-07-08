@@ -11,6 +11,10 @@ import waterSplash2 from './assets/water_splash2.jpg'
 import iso9001 from './assets/iso_9001.png'
 import bpomLogo from './assets/bpom_logo.png'
 import halalLogo from './assets/halal_logo.png'
+import sertif1 from './assets/sertif1.jpeg'
+import sertif2 from './assets/sertif2.jpeg'
+import sertif3 from './assets/sertif3.jpeg'
+import sertif4 from './assets/sertif4.jpeg'
 
 function App() {
   // Function to handle smooth scrolling
@@ -476,6 +480,85 @@ function App() {
         </div>
       </section>
 
+      {/* Test and Research Results Section */}
+      <section id="test-results" className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <motion.div 
+              className="relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300"
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <a href={sertif1} target="_blank" rel="noopener noreferrer">
+                <img 
+                  src={sertif1} 
+                  alt="" 
+                  className="w-full h-full object-cover cursor-pointer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-200/20 to-cyan-200/20 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+              </a>
+            </motion.div>
+            
+            <motion.div 
+              className="relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300"
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <a href={sertif2} target="_blank" rel="noopener noreferrer">
+                <img 
+                  src={sertif2} 
+                  alt="" 
+                  className="w-full h-full object-cover cursor-pointer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-green-200/20 to-emerald-200/20 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+              </a>
+            </motion.div>
+            
+            <motion.div 
+              className="relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300"
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <a href={sertif3} target="_blank" rel="noopener noreferrer">
+                <img 
+                  src={sertif3} 
+                  alt="" 
+                  className="w-full h-full object-cover cursor-pointer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-yellow-200/20 to-orange-200/20 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+              </a>
+            </motion.div>
+            
+            <motion.div 
+              className="relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300"
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <a href={sertif4} target="_blank" rel="noopener noreferrer">
+                <img 
+                  src={sertif4} 
+                  alt="" 
+                  className="w-full h-full object-cover cursor-pointer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-200/20 to-pink-200/20 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+              </a>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="container mx-auto px-6">
@@ -547,38 +630,6 @@ function App() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <div className="bg-white rounded-3xl p-8 shadow-xl">
-                <h4 className="text-2xl font-bold mb-6 text-gray-800">Kirim Pesan</h4>
-                <form className="space-y-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Nama</label>
-                    <input 
-                      type="text" 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
-                      placeholder="Masukkan nama Anda"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                    <input 
-                      type="email" 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
-                      placeholder="Masukkan email Anda"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Pesan</label>
-                    <textarea 
-                      rows="4" 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
-                      placeholder="Tulis pesan Anda di sini"
-                    ></textarea>
-                  </div>
-                  <Button className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white py-3 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
-                    Kirim Pesan
-                  </Button>
-                </form>
-              </div>
             </motion.div>
           </div>
         </div>
