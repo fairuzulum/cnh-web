@@ -161,12 +161,7 @@ function App() {
               >
                 Jaminan Kualitas
               </a>
-              <a
-                href="#contact"
-                onClick={(e) => handleNavClick(e, "#contact")}
-                className="text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                Kontak
+              k
               </a>
             </nav>
             <div className="md:hidden">
