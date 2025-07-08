@@ -161,8 +161,7 @@ function App() {
               >
                 Jaminan Kualitas
               </a>
-              k
-              </a>
+              
             </nav>
             <div className="md:hidden">
               <button onClick={toggleMenu} className="text-gray-700">
