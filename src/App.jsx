@@ -186,12 +186,10 @@ function App() {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 py-3 rounded-full text-base sm:text-lg font-semibold shadow-lg transition-all duration-300">
-                Pelajari Lebih Lanjut
-              </Button>
-              <Button variant="outline" className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 py-3 rounded-full text-base sm:text-lg font-semibold transition-all duration-300">
+              <a href="https://wa.me/6281322420908" className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 py-3 rounded-full text-base sm:text-lg font-semibold shadow-lg transition-all duration-300">
                 Hubungi Kami
-              </Button>
+              </a>
+            
             </motion.div>
             
             <motion.div 
