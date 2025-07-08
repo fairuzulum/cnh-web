@@ -5,8 +5,8 @@ import { Button } from '@/components/ui/button.jsx'
 import './App.css'
 
 // Import images
-import mineralWaterBottle from './assets/mineral_water_bottle.jpg'
-import waterSplash1 from './assets/water_splash1.jpg'
+import mineralWaterBottle from './assets/mineral_water.png'
+import waterSplash1 from './assets/water_splash.png'
 import waterSplash2 from './assets/water_splash2.jpg'
 import iso9001 from './assets/iso_9001.png'
 import bpomLogo from './assets/bpom_logo.png'
