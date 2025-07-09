@@ -265,7 +265,7 @@ function App() {
               viewport={{ once: true }}
             >
               <a
-                href="https://wa.me/6281322420908"
+                href="https://wa.me/6287714490752"
                 className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 py-3 rounded-full text-base sm:text-lg font-semibold shadow-lg transition-all duration-300"
               >
                 Hubungi Kami
