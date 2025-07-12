@@ -25,6 +25,7 @@ import "./App.css";
 import mineralWaterBottle from "./assets/mineral_water.png";
 import waterSplash1 from "./assets/water_splash.png";
 import waterSplash2 from "./assets/water_splash2.jpg";
+import about from "./assets/about.jpeg";
 import iso9001 from "./assets/iso_9001.png";
 import bpomLogo from "./assets/bpom_logo.png";
 import halalLogo from "./assets/halal_logo.png";
@@ -134,13 +135,12 @@ function App() {
                 Beranda
               </a>
               <a
-                href="#"
-                onClick={(e) => handleNavClick(e, "#")}
+                href="#tentang-kami"
+                onClick={(e) => handleNavClick(e, "#tentang-kami")}
                 className="text-gray-700 hover:text-blue-600 transition-colors"
               >
-                Portofolio
+                Tentang Kami
               </a>
-            
               <a
                 href="#new-certifications"
                 onClick={(e) => handleNavClick(e, "#new-certifications")}
@@ -148,8 +148,6 @@ function App() {
               >
                 Sertifikasi
               </a>
-
-              
             </nav>
             <div className="md:hidden">
               <button onClick={toggleMenu} className="text-gray-700">
@@ -171,34 +169,19 @@ function App() {
                 Beranda
               </a>
               <a
-                href="#about"
-                onClick={(e) => handleNavClick(e, "#about")}
+                href="#"
                 className="text-gray-700 hover:text-blue-600 transition-colors text-lg"
               >
-                Tentang
+                Portofolio
               </a>
+            
               <a
-                href="#products"
-                onClick={(e) => handleNavClick(e, "#products")}
-                className="text-gray-700 hover:text-blue-600 transition-colors text-lg"
-              >
-                Produk
-              </a>
-              <a
-                href="#new-certifications"
-                onClick={(e) => handleNavClick(e, "#new-certifications")}
+                href="#"
                 className="text-gray-700 hover:text-blue-600 transition-colors text-lg"
               >
                 Sertifikasi
               </a>
-              <a
-                href="#certifications"
-                onClick={(e) => handleNavClick(e, "#certifications")}
-                className="text-gray-700 hover:text-blue-600 transition-colors text-lg"
-              >
-                Jaminan Kualitas
-              </a>
-             
+            
             </nav>
           )}
         </div>
@@ -304,6 +287,61 @@ function App() {
         </div>
       </section>
 
+      {/* Tentang Kami Section */}
+      <section id="tentang-kami" className="py-16 bg-gradient-to-br from-blue-50 to-cyan-50">
+        <div className="container mx-auto px-4 sm:px-6 w-full max-w-full">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ y: 30, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="p-3 text-3xl sm:text-4xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+              Tentang Kami
+            </h3>
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+              Yayasan Pondok Pesantren Nurul Hidayah, asal mula CNH, berdedikasi untuk pendidikan Islam dan kesejahteraan masyarakat melalui air minum mineral berkualitas tinggi.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <img
+                src={about}
+                alt="Water Splash"
+                className="w-full rounded-3xl shadow-2xl"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+             
+
+              <p className="text-gray-600 text-sm sm:text-base mb-4">
+                Didirikan pada November 2008, Yayasan Pondok Pesantren Nurul Hidayah di Ciamis, Jawa Barat, bermula dari visi mendirikan lembaga pendidikan Islam. Berlokasi di ketinggian 800 meter di atas permukaan laut, pesantren ini mengelola tiga lembaga pendidikan formal: MI, MTs SA, dan MA Plus, di atas lahan wakaf seluas 2 hektar.
+              </p>
+              <p className="text-gray-600 text-sm sm:text-base mb-4">
+                Pada 2011, krisis air saat musim kemarau mendorong penggalian Sumur Artesis sedalam 140 meter. Dengan izin dan dukungan dana dari BSM serta sumbangan santri, sumur ini menghasilkan air berkualitas tinggi dengan pH 8.5, bersifat basa/alkaline. Laboratorium memastikan air ini rendah zat besi, mendekati kualitas air zam-zam, dan bermanfaat untuk kesehatan, seperti menonaktifkan sel kanker dan mendukung pencernaan.
+              </p>
+              <p className="text-gray-600 text-sm sm:text-base">
+                CNH lahir dari keistimewaan sumber air ini, berkomitmen menyediakan air minum mineral premium untuk mendukung gaya hidup sehat dan kesejahteraan masyarakat.
+              </p>
+              
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section id="about" className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 w-full max-w-full">
@@ -314,7 +352,7 @@ function App() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl sm:text-4xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+            <h3 className="p-3 text-3xl sm:text-4xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
               Mengapa Memilih CNH?
             </h3>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
