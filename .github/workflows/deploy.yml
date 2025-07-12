@@ -1,0 +1,28 @@
+name: Deploy to cPanel
+on:
+  push:
+    branches:
+      - master # Sesuai branch kamu
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.14.0' # Sesuai versi Node kamu
+      - name: Install dependencies
+        run: npm install
+      - name: Build project
+        run: npm run build
+      - name: Deploy to cPanel
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: / # Direktori tujuan di cPanel
+          local-dir: ./dist/ # Ganti jadi dist/ kalau folder build kamu bernama dist
+          delete: true # Hapus file lama di server sebelum upload baru
