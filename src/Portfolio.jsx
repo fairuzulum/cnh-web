@@ -210,7 +210,7 @@ function Portfolio() {
                       Telepon
                     </h4>
                     <p className="text-gray-400 text-sm sm:text-base">
-                      +62 813 1838 1219
+                      +62 877-1449-0752
                     </p>
                   </div>
                 </div>
@@ -224,7 +224,7 @@ function Portfolio() {
                       Email
                     </h4>
                     <p className="text-gray-400 text-sm sm:text-base">
-                      info@cnh-water.com
+                      info@cnhairkesehatanmalabar.com
                     </p>
                   </div>
                 </div>
