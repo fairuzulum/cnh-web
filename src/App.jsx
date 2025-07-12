@@ -134,19 +134,13 @@ function App() {
                 Beranda
               </a>
               <a
-                href="#about"
-                onClick={(e) => handleNavClick(e, "#about")}
+                href="#"
+                onClick={(e) => handleNavClick(e, "#")}
                 className="text-gray-700 hover:text-blue-600 transition-colors"
               >
-                Tentang
+                Portofolio
               </a>
-              <a
-                href="#products"
-                onClick={(e) => handleNavClick(e, "#products")}
-                className="text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                Produk
-              </a>
+            
               <a
                 href="#new-certifications"
                 onClick={(e) => handleNavClick(e, "#new-certifications")}
@@ -154,13 +148,7 @@ function App() {
               >
                 Sertifikasi
               </a>
-              <a
-                href="#certifications"
-                onClick={(e) => handleNavClick(e, "#certifications")}
-                className="text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                Jaminan Kualitas
-              </a>
+
               
             </nav>
             <div className="md:hidden">
