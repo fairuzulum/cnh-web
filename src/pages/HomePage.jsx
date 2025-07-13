@@ -6,7 +6,7 @@ import { Award, Shield, CheckCircle, Droplets } from "lucide-react";
 
 // Import images yang dibutuhkan oleh halaman ini
 import mineralWaterBottle from "../assets/banner04.JPG";
-import waterSplash1 from "../assets/produk.jpg";
+import waterSplash1 from "../assets/produk.JPG";
 import about from "../assets/about.jpeg";
 import iso9001 from "../assets/iso_9001.png";
 import bpomLogo from "../assets/bpom_logo.png";
