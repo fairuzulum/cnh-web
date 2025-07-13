@@ -82,7 +82,7 @@ function Footer() {
                   <p className="text-gray-400 text-sm sm:text-base">
                     Dusun Malabar,
                     <br />
-                    Desa/Kelurahan Sidamulih, Kecamatan Pamarican
+                    Desa/Kelurahan Sidamulih, Kec. Pamarican
                     <br />
                     Kab. Ciamis Prov. Jawa Barat
                   </p>
