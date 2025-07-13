@@ -173,7 +173,7 @@ function HomePage() {
                 Pada 2011, krisis air saat musim kemarau mendorong penggalian
                 Sumur Artesis sedalam 140 meter. Dengan izin dan dukungan dana
                 dari BSM serta sumbangan santri, sumur ini menghasilkan air
-                berkualitas tinggi dengan pH 8.5, bersifat basa/alkaline.
+                berkualitas tinggi dengan pH 9, bersifat basa/alkaline.
                 Laboratorium memastikan air ini rendah zat besi, mendekati
                 kualitas air zam-zam, dan bermanfaat untuk kesehatan, seperti
                 menonaktifkan sel kanker dan mendukung pencernaan.
