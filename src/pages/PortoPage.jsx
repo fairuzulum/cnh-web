@@ -140,7 +140,7 @@ function PortoPage() {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   </div>
-                  <div className="p-6 bg-gradient-to-br from-blue-50 to-cyan-50">
+                  <div className="p-6">
                     <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full mb-3">
                       {item.category}
                     </span>
