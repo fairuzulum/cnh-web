@@ -10,6 +10,8 @@ import porto02 from "../assets/porto-02.jpg";
 import porto03 from "../assets/porto-03.jpg";
 import porto04 from "../assets/porto-04.jpg"; // Perhatikan ekstensi file jika berbeda
 import porto05 from "../assets/porto-05.jpeg"; // Perhatikan ekstensi file jika berbeda
+import porto06 from "../assets/porto-06.jpg";
+
 
 function PortoPage() {
   const [activeFilter, setActiveFilter] = useState("Semua");
@@ -55,6 +57,15 @@ function PortoPage() {
       image: porto05,
       category: "Partisipasi Pameran",
     },
+    {
+      id: "porto-06",
+      title: "Kolaborasi Strategis dengan UMKM Lokal",
+      description:
+        "Menggandeng pelaku UMKM dalam rangka memperluas distribusi produk sekaligus mendorong pertumbuhan ekonomi kerakyatan.",
+      image: porto06,
+      category: "Kolaborasi & Jaringan",
+    },
+    
   ];
 
   const categories = [
